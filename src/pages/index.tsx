@@ -93,7 +93,12 @@ export default function Home() {
         description={'Caicó-RN'}
       />
 
-
+      <UserInformation
+        name={'Flavim'}
+        picture={'https://github.com/FlaviodosSantos.png'}
+        rating={5}
+        description={'Caicó-RN'}
+      />
 
 
     </div>
