@@ -1,7 +1,6 @@
-import Head from 'next/head';
 import SafeEnvironment from 'ui/components/feedback/SafeEnvironment/SafeEnvironment';
 import PageTitle from 'ui/components/data-display/PageTitle/PageTitle';
-
+import UserInformation from 'ui/components/data-display/UserInformation/UserInformation';
 
 
 export default function Home() {
@@ -11,7 +10,14 @@ export default function Home() {
       <PageTitle 
         title={'Conheça os profissionais'}
         subtitle={'Preencha seu endereço e veja todos os profissionais da sua localidade'}
-      />    
+      /> 
+
+      <UserInformation 
+        name={'Flavim'}
+        picture={'https://github.com/FlaviodosSantos.png'}
+        rating={5}
+        description={'Caicó-RN'}
+      />   
     </div> 
   
   );
