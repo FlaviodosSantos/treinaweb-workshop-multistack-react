@@ -22,10 +22,10 @@ const UserInformation: React.FC<UserInformationProps> = ({
 }) => {
     return (
         <UserInformationContainer>
-            <AvatarStyled src={picture}/>
-            <UserName>{name}</UserName>
-            <RatingStyled readOnly value={rating}/>
-            <UserDescription> {description} </UserDescription>
+            <AvatarStyled>{ name[0] }</AvatarStyled>
+            <UserName>{ name }</UserName>
+            <RatingStyled readOnly value={ rating }/>
+            <UserDescription> { description } </UserDescription>
         </UserInformationContainer>
     );
 };
