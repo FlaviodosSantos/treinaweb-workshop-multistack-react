@@ -2,6 +2,12 @@ import SafeEnvironment from 'ui/components/feedback/SafeEnvironment/SafeEnvironm
 import PageTitle from 'ui/components/data-display/PageTitle/PageTitle';
 import UserInformation from 'ui/components/data-display/UserInformation/UserInformation';
 import TextFieldMask from 'ui/components/inputs/TextFieldMask/TextFieldMask';
+import { Button, Typography, Container } from '@material-ui/core';
+import {
+  FormElementsContainer,
+  ProfissionaisPaper,
+  ProfissionaisContainer
+} from '@styles/pages/index.style';
 
 
 export default function Home() {
@@ -13,99 +19,119 @@ export default function Home() {
         subtitle={'Preencha seu endereço e veja todos os profissionais da sua localidade'}
       />
 
-      <TextFieldMask
-        mask={'99.999-999'} label={'Digite seu CEP'} fullWidth variant={'outlined'}
-      />
+      <Container>
+        <FormElementsContainer>
+          <TextFieldMask
+            mask={'99.999-999'}
+            label={'Digite seu CEP'}
+            fullWidth
+            variant={'outlined'}
+          />
 
-      <UserInformation
-        name={'Flavim'}
-        picture={'https://github.com/FlaviodosSantos.png'}
-        rating={5}
-        description={'Caicó-RN'}
-      />
+          <Typography color={'error'} >CEP inválido</Typography>
 
-      <UserInformation
-        name={'Flavim'}
-        picture={'https://github.com/FlaviodosSantos.png'}
-        rating={5}
-        description={'Caicó-RN'}
-      />
+          <Button
+            variant={'contained'}
+            color={'secondary'}
+            sx={{ width: '220px' }}
+          >
+            Buscar
+          </Button>
+        </FormElementsContainer>
 
-      <UserInformation
-        name={'Flavim'}
-        picture={'https://github.com/FlaviodosSantos.png'}
-        rating={5}
-        description={'Caicó-RN'}
-      />
-      <UserInformation
-        name={'Flavim'}
-        picture={'https://github.com/FlaviodosSantos.png'}
-        rating={5}
-        description={'Caicó-RN'}
-      />
+        <ProfissionaisPaper>
+          <ProfissionaisContainer>
 
-      <UserInformation
-        name={'Flavim'}
-        picture={'https://github.com/FlaviodosSantos.png'}
-        rating={5}
-        description={'Caicó-RN'}
-      />
+            <UserInformation
+              name={'Flavim'}
+              picture={'https://github.com/FlaviodosSantos.png'}
+              rating={5}
+              description={'Caicó-RN'}
+            />
 
-      <UserInformation
-        name={'Flavim'}
-        picture={'https://github.com/FlaviodosSantos.png'}
-        rating={5}
-        description={'Caicó-RN'}
-      />
-      <UserInformation
-        name={'Flavim'}
-        picture={'https://github.com/FlaviodosSantos.png'}
-        rating={5}
-        description={'Caicó-RN'}
-      />
+            <UserInformation
+              name={'Flavim'}
+              picture={'https://github.com/FlaviodosSantos.png'}
+              rating={5}
+              description={'Caicó-RN'}
+            />
 
-      <UserInformation
-        name={'Flavim'}
-        picture={'https://github.com/FlaviodosSantos.png'}
-        rating={5}
-        description={'Caicó-RN'}
-      />
+            <UserInformation
+              name={'Flavim'}
+              picture={'https://github.com/FlaviodosSantos.png'}
+              rating={5}
+              description={'Caicó-RN'}
+            />
+            <UserInformation
+              name={'Flavim'}
+              picture={'https://github.com/FlaviodosSantos.png'}
+              rating={5}
+              description={'Caicó-RN'}
+            />
 
-      <UserInformation
-        name={'Flavim'}
-        picture={'https://github.com/FlaviodosSantos.png'}
-        rating={5}
-        description={'Caicó-RN'}
-      />
-      <UserInformation
-        name={'Flavim'}
-        picture={'https://github.com/FlaviodosSantos.png'}
-        rating={5}
-        description={'Caicó-RN'}
-      />
+            <UserInformation
+              name={'Flavim'}
+              picture={'https://github.com/FlaviodosSantos.png'}
+              rating={5}
+              description={'Caicó-RN'}
+            />
 
-      <UserInformation
-        name={'Flavim'}
-        picture={'https://github.com/FlaviodosSantos.png'}
-        rating={5}
-        description={'Caicó-RN'}
-      />
+            <UserInformation
+              name={'Flavim'}
+              picture={'https://github.com/FlaviodosSantos.png'}
+              rating={5}
+              description={'Caicó-RN'}
+            />
+            <UserInformation
+              name={'Flavim'}
+              picture={'https://github.com/FlaviodosSantos.png'}
+              rating={5}
+              description={'Caicó-RN'}
+            />
 
-      <UserInformation
-        name={'Flavim'}
-        picture={'https://github.com/FlaviodosSantos.png'}
-        rating={5}
-        description={'Caicó-RN'}
-      />
+            <UserInformation
+              name={'Flavim'}
+              picture={'https://github.com/FlaviodosSantos.png'}
+              rating={5}
+              description={'Caicó-RN'}
+            />
 
-      <UserInformation
-        name={'Flavim'}
-        picture={'https://github.com/FlaviodosSantos.png'}
-        rating={5}
-        description={'Caicó-RN'}
-      />
+            <UserInformation
+              name={'Flavim'}
+              picture={'https://github.com/FlaviodosSantos.png'}
+              rating={5}
+              description={'Caicó-RN'}
+            />
+            <UserInformation
+              name={'Flavim'}
+              picture={'https://github.com/FlaviodosSantos.png'}
+              rating={5}
+              description={'Caicó-RN'}
+            />
 
+            <UserInformation
+              name={'Flavim'}
+              picture={'https://github.com/FlaviodosSantos.png'}
+              rating={5}
+              description={'Caicó-RN'}
+            />
 
+            <UserInformation
+              name={'Flavim'}
+              picture={'https://github.com/FlaviodosSantos.png'}
+              rating={5}
+              description={'Caicó-RN'}
+            />
+
+            <UserInformation
+              name={'Flavim'}
+              picture={'https://github.com/FlaviodosSantos.png'}
+              rating={5}
+              description={'Caicó-RN'}
+            />
+          </ProfissionaisContainer>
+        </ProfissionaisPaper>
+      </Container>
     </div>
 
   );
