@@ -94,7 +94,6 @@ export default function Home() {
                             Ainda não temos nenhuma diarista disponível em sua região.
                         </Typography>
                     )
-
                 )}
             </Container>
         </div>
