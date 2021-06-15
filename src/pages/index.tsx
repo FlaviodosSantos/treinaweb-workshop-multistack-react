@@ -12,7 +12,17 @@ import useIndex from 'data/hooks/pages/useIndex.page';
 
 
 export default function Home() {
-    const { cep, setCep, cepValido } = useIndex();
+    const {
+        cep,
+        setCep,
+        cepValido,
+        buscarProfissionais,
+        erro,
+        diaristas,
+        buscaFeita,
+        carregando,
+        diaristasRestantes,
+    } = useIndex();
 
     return (
         <div>
