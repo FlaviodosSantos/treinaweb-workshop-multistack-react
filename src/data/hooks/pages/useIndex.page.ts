@@ -36,7 +36,6 @@ export default function useIndex() {
             setCarregando(false);
         }
 
-        setBuscaFeita(true);
     }
 
 
