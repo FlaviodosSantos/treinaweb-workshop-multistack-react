@@ -57,7 +57,7 @@ export default function Home() {
                     </Button>
                 </FormElementsContainer>
 
-                {buscaFeita && (diaristas.length > 0 ?
+                {buscaFeita && (diaristas.length > 0 ? (
                     <ProfissionaisPaper>
                         <ProfissionaisContainer>
                             {diaristas.map((item, index) => {
@@ -89,12 +89,11 @@ export default function Home() {
                             >Contrate um profissional</Button>
                         </Container>
                     </ProfissionaisPaper>
-                    : (
-                        <Typography align={'center'} color={'textPrimary'} >
-                            Ainda não temos nenhuma diarista disponível em sua região.
-                        </Typography>
-                    )
-                )}
+                ) : (
+                    <Typography align={'center'} color={'textPrimary'} >
+                        Ainda não temos nenhuma diarista disponível em sua região.
+                    </Typography>
+                ))}
             </Container>
         </div>
 

@@ -8,8 +8,7 @@ export const UserInformationContainer = styled('div')`
     grid-template-areas: 
         'avatar name'
         'avatar rating'
-        'avatar description'
-        ;
+        'avatar description';
     background-color: ${({ theme }) => theme.palette.grey[50]};
     padding: ${({ theme }) => theme.spacing(3)};
     gap: ${({ theme }) => theme.spacing(.5) + ' ' + theme.spacing(2)};
@@ -17,26 +16,26 @@ export const UserInformationContainer = styled('div')`
 `;
 
 export const UserName = styled('div')`
-grid-area: name;
+    grid-area: name;
     font-weight: bolder;
-    color: ${({ theme }) => theme.palette.text.primary };
-    font-size: ${({ theme }) => theme.typography.body2.fontSize };
+    color: ${({ theme }) => theme.palette.text.primary};
+    font-size: ${({ theme }) => theme.typography.body2.fontSize};
 `;
 
 export const UserDescription = styled('div')`
-grid-area: description;
-    color: ${({ theme }) => theme.palette.text.secondary };
-    font-size: ${({ theme }) => theme.typography.body2.fontSize };
+    grid-area: description;
+    color: ${({ theme }) => theme.palette.text.secondary};
+    font-size: ${({ theme }) => theme.typography.body2.fontSize};
 `;
 
-export const AvatarStyled = styled( Avatar )`
+export const AvatarStyled = styled(Avatar)`
     grid-area: avatar;
     width: 100%;
     height: initial;
     aspect-ratio: 1;
 `;
 
-export const RatingStyled = styled( Rating )`
+export const RatingStyled = styled(Rating)`
     grid-area: rating;
     font-size: 14px;
 `;
